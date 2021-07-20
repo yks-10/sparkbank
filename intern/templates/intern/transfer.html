@@ -1,0 +1,66 @@
+
+{% extends 'intern/base.html' %}
+
+
+
+{% load static %}
+
+
+{% block content %}
+
+  <style>
+      .int{
+          margin-left:200px;
+      }
+      .card{
+            left:190px;
+            right:0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color:white;
+            border-style:box;
+	        border-radius: 30px;
+	        opacity : 70%;
+	        text-decoration:none;
+      }
+
+  </style>
+
+      <center><h4>TRANSACTION</center>
+<hr>
+    <div class="int">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+         <div
+            class=" text-center img-fluid"   style="background-image: url('/static/intern/bank.jpg'); background-repeat:no-repeat; width:1524px; height:630px;   ">
+
+            <center>
+
+                <div class="card bg-dark" style="width: 18rem;">
+                    <br>
+
+                  <ul class="list-group list-group-flush">
+                      <h5>TRANSACTION</h5>
+                      <hr>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-success">Transfer</button>
+                        <br>
+                    </form>
+
+
+                  </ul>
+                </div>
+            </center>
+
+
+    </div>
+  <!-- Background image -->
+{% endblock %}
+

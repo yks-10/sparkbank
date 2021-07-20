@@ -1,0 +1,44 @@
+
+
+{% extends 'intern/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+  <style>
+      .int{
+      margin-left:50px;
+      margin-right:50px;
+      }
+
+  </style>
+  <div class="int img-fluid"   style="background-image: url('/static/intern/bank1.jpg'); background-repeat:no-repeat;  height:630px;   ">
+     <center><h4>CUSTOMERS</h4></center>
+        <hr>
+            <center>
+               <table class="table table-bordered ">
+                  <thead >
+                    <tr>
+
+                      <th scope="col">FIRST NAME</th>
+                      <th scope="col">LAST NAME</th>
+                      <th scope="col">D-O-B</th>
+                      <th scope="col">Email</th>
+                         <th scope="col">Mobile No</th>
+                    </tr>
+                  </thead>
+                  {%  for data in customer %}
+                  <tbody class="table table-sm">
+                       <th>{{ data.first_name }}</th>
+                       <th>{{ data.last_name }}</th>
+                       <th>{{ data.birth_date }}</th>
+                       <th>{{ data.email }}</th>
+                        <th>{{ data.mobile }}</th>
+                  </tbody>
+                  {% endfor %}
+               </table>
+            </center>
+  </div>
+  <!-- Background image -->
+{% endblock %}

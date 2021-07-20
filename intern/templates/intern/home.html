@@ -1,0 +1,56 @@
+
+
+
+{% extends 'intern/base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <style>
+      .int{
+          margin:20px;
+
+      }
+      .card{
+            border-style:box;
+	        border-radius: 30px;
+	        opacity : 80%;
+	        text-decoration:none;
+      }
+
+  </style>
+    <div class="int">
+
+         <div
+            class=" text-center img-fluid"   style="background-image: url('/static/intern/bank1.jpg'); background-repeat:no-repeat;  height:630px;   ">
+
+             <br>
+             <br>
+             <br>
+             <br><br>
+
+            <center>
+                <div class="card " style="width: 18rem;">
+                  <div class="card-header">
+                      <h5>YOU CAN DO</h5>
+                   </div>
+                  <ul class="list-group list-group-flush">
+                      <br>
+                      <li class="list-group"> <a  class="nav-link" href="{% url 'transfer' %}">TRANSFER </a></li>
+                      <br>
+                      <li class="list-group"> <a  class="nav-link" href="{% url 'customer' %}">CUSTOMER </a></li>
+                      <br>
+                    <li class="list-group">BACK</li>
+                      <br>
+                  </ul>
+                </div>
+            </center>
+
+
+    </div>
+  <!-- Background image -->
+{% endblock %}
+
+
+
+</html>

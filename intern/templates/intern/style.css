@@ -1,0 +1,38 @@
+
+
+body{
+	color: white;
+	background-image: url('bank4.jpg');
+	background-size: 90% ;
+}
+.split{
+	position: fixed;
+    z-index: 1;
+    top: 60px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.imag{
+	height: 80%;
+	border-style:box;
+	border-radius: 50px;
+	margin: 0px;
+	left:40px;
+	width:55%;
+	opacity: 100%;
+
+
+
+}
+
+.txt{
+	height: 50%;
+	margin-top: 100px;
+	text-align: center;
+	border-style:box;
+	border-radius: 50px;
+	right: 60px;
+	width: 25%;
+	background-color: black;
+
+}

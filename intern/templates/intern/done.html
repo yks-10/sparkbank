@@ -1,0 +1,41 @@
+
+
+{% extends 'intern/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+  <style>
+      .int{
+          margin:20px;
+          margin-top:150px;
+          margin-left:450px;
+      }
+      .card{
+            border-style:box;
+	        border-radius: 5px;
+	        opacity : 70%;
+	        text-decoration:none;
+	        color:white;
+      }
+
+
+  </style>
+    <div class="int img-fluid" style="background-image: url('/static/intern/bank.jpg'); background-repeat:no-repeat;  height:500px; width:800px;   >
+
+            <center>
+                <div class="card bg-success " style="width: 18rem;">
+
+                      <h3>THIS TRANSACTION IS SUCCESSFUL</h3>
+                </div>
+
+            </center>
+
+
+
+
+
+    </div>
+  <!-- Background image -->
+{% endblock %}
