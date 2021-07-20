@@ -6,8 +6,8 @@ from .models import Customer
 # Create your views here.
 def base(request):
     return render(request,'base.html')
-def home(request):
-    return render(request,'intern/home.html')
+def index(request):
+    return render(request,'intern/index.html')
 def transfer(request):
     if request.method == 'GET':
         return render(request,'intern/transfer.html', {'form':Intern()})
